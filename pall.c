@@ -1,7 +1,9 @@
 #include "monty.h"
 
 /**
-* print_all_values - 
+* print_all_values - prints all values when pall opcode is encountered
+* @stack: the stack to be printed
+* @line_number: unused parameter
 */
 
 void print_all_values(stack_t **stack, unsigned int line_number)
