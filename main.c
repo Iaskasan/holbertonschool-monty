@@ -1,8 +1,16 @@
 #include "monty.h"
 
-int main(void)
+int main(int argc, char **argv)
 {
-	stack_t *stack = NULL;
+	int status;
 
-	
+	if (argc != 2)
+	{
+		fprintf(stderr, "USAGE: monty file\n");
+		return (EXIT_FAILURE);
+	}
+
+	status = process_file(argv[1]);
+
+	return (status);
 }

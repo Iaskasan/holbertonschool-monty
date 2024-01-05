@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * push - opcode to push a value onto the stack
+ * push_element - opcode to push a value onto the stack
  * @stack: double pointer to the beginning of the stack
  * @value: value to be pushed onto the stack
  */
 
-void push(stack_t **stack, int value)
+void push_element(stack_t **stack, unsigned int value)
 {
 	stack_t *new_node = malloc(sizeof(stack_t));
 
